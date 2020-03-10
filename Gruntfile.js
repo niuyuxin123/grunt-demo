@@ -4,7 +4,7 @@ module.exports = function (grunt) {
     concat: {
       js: {
         src: ['rectangle.js', 'calc.js'],
-        dest: 'dist/bundle.js'
+        dest: 'dist/bundle.min.js'
       },
       css:{
         src: ['css/*.css'],
@@ -18,4 +18,5 @@ module.exports = function (grunt) {
   grunt.registerTask('default', ['concat:js','concat:css']); 
 
 };
-    
+   
+
